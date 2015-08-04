@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ZPG-Wx-sTj">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ZPG-Wx-sTj">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -51,13 +51,13 @@
                                         </view>
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="0.14999999999999999" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="E1Y-ON-dis" secondAttribute="trailing" id="ANy-Fn-ewz"/>
+                                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="E1Y-ON-dis" secondAttribute="trailing" priority="999" id="ANy-Fn-ewz"/>
                                             <constraint firstItem="E1Y-ON-dis" firstAttribute="leading" secondItem="eIj-1V-XKc" secondAttribute="trailing" constant="10" id="Hg7-p2-hfH"/>
-                                            <constraint firstAttribute="bottomMargin" secondItem="eIj-1V-XKc" secondAttribute="bottom" constant="-8" id="RDu-bg-Bag"/>
-                                            <constraint firstItem="eIj-1V-XKc" firstAttribute="leading" secondItem="Yda-zX-qwf" secondAttribute="leadingMargin" constant="-8" id="T0d-o7-WRq"/>
+                                            <constraint firstAttribute="bottom" secondItem="eIj-1V-XKc" secondAttribute="bottom" id="RDu-bg-Bag"/>
+                                            <constraint firstItem="eIj-1V-XKc" firstAttribute="leading" secondItem="Yda-zX-qwf" secondAttribute="leading" id="T0d-o7-WRq"/>
                                             <constraint firstItem="E1Y-ON-dis" firstAttribute="top" secondItem="Yda-zX-qwf" secondAttribute="topMargin" id="UA6-R4-nTf"/>
                                             <constraint firstAttribute="bottomMargin" secondItem="E1Y-ON-dis" secondAttribute="bottom" id="Z9T-gZ-frq"/>
-                                            <constraint firstItem="eIj-1V-XKc" firstAttribute="top" secondItem="Yda-zX-qwf" secondAttribute="topMargin" constant="-8" id="b7G-FK-RRZ"/>
+                                            <constraint firstItem="eIj-1V-XKc" firstAttribute="top" secondItem="Yda-zX-qwf" secondAttribute="top" id="b7G-FK-RRZ"/>
                                         </constraints>
                                         <connections>
                                             <outlet property="thumbnailImageView" destination="eIj-1V-XKc" id="ZXD-Ve-2yx"/>
@@ -73,10 +73,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Ptl-T5-vW9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="PmB-fH-g7v"/>
-                            <constraint firstItem="Ptl-T5-vW9" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="RYB-Wy-Hwd"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Ptl-T5-vW9" secondAttribute="trailing" constant="-16" id="av4-dQ-vmE"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Ptl-T5-vW9" secondAttribute="bottom" id="kV8-64-VIo"/>
+                            <constraint firstItem="Ptl-T5-vW9" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Ezb-h0-I9t"/>
+                            <constraint firstItem="Ptl-T5-vW9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Ixj-m9-M5w"/>
+                            <constraint firstAttribute="trailing" secondItem="Ptl-T5-vW9" secondAttribute="trailing" id="XYN-ca-y1z"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Ptl-T5-vW9" secondAttribute="bottom" id="rLu-dx-T0i"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="pmr-kb-kdj"/>
