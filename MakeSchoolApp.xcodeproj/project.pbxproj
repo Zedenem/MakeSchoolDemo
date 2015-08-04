@@ -9,11 +9,13 @@
 /* Begin PBXBuildFile section */
 		874B6DC41B71387F00F1A523 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 874B6DC31B71387F00F1A523 /* main.m */; };
 		874B6DC71B71387F00F1A523 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 874B6DC61B71387F00F1A523 /* AppDelegate.m */; };
-		874B6DCA1B71387F00F1A523 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 874B6DC91B71387F00F1A523 /* ViewController.m */; };
+		874B6DCA1B71387F00F1A523 /* DMVideosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 874B6DC91B71387F00F1A523 /* DMVideosViewController.m */; };
 		874B6DCD1B71387F00F1A523 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 874B6DCB1B71387F00F1A523 /* Main.storyboard */; };
 		874B6DCF1B71387F00F1A523 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 874B6DCE1B71387F00F1A523 /* Images.xcassets */; };
 		874B6DD21B71387F00F1A523 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 874B6DD01B71387F00F1A523 /* LaunchScreen.xib */; };
 		874B6DDE1B71387F00F1A523 /* MakeSchoolAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 874B6DDD1B71387F00F1A523 /* MakeSchoolAppTests.m */; };
+		874B6DE91B71390600F1A523 /* DMVideo.m in Sources */ = {isa = PBXBuildFile; fileRef = 874B6DE81B71390600F1A523 /* DMVideo.m */; };
+		874B6DEC1B713A7500F1A523 /* DMVideoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 874B6DEB1B713A7500F1A523 /* DMVideoCollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +34,18 @@
 		874B6DC31B71387F00F1A523 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		874B6DC51B71387F00F1A523 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		874B6DC61B71387F00F1A523 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		874B6DC81B71387F00F1A523 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		874B6DC91B71387F00F1A523 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		874B6DC81B71387F00F1A523 /* DMVideosViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DMVideosViewController.h; sourceTree = "<group>"; };
+		874B6DC91B71387F00F1A523 /* DMVideosViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DMVideosViewController.m; sourceTree = "<group>"; };
 		874B6DCC1B71387F00F1A523 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		874B6DCE1B71387F00F1A523 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		874B6DD11B71387F00F1A523 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		874B6DD71B71387F00F1A523 /* MakeSchoolAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MakeSchoolAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		874B6DDC1B71387F00F1A523 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		874B6DDD1B71387F00F1A523 /* MakeSchoolAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MakeSchoolAppTests.m; sourceTree = "<group>"; };
+		874B6DE71B71390600F1A523 /* DMVideo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMVideo.h; sourceTree = "<group>"; };
+		874B6DE81B71390600F1A523 /* DMVideo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMVideo.m; sourceTree = "<group>"; };
+		874B6DEA1B713A7500F1A523 /* DMVideoCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMVideoCollectionViewCell.h; sourceTree = "<group>"; };
+		874B6DEB1B713A7500F1A523 /* DMVideoCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMVideoCollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,8 +89,12 @@
 			children = (
 				874B6DC51B71387F00F1A523 /* AppDelegate.h */,
 				874B6DC61B71387F00F1A523 /* AppDelegate.m */,
-				874B6DC81B71387F00F1A523 /* ViewController.h */,
-				874B6DC91B71387F00F1A523 /* ViewController.m */,
+				874B6DC81B71387F00F1A523 /* DMVideosViewController.h */,
+				874B6DC91B71387F00F1A523 /* DMVideosViewController.m */,
+				874B6DE71B71390600F1A523 /* DMVideo.h */,
+				874B6DE81B71390600F1A523 /* DMVideo.m */,
+				874B6DEA1B713A7500F1A523 /* DMVideoCollectionViewCell.h */,
+				874B6DEB1B713A7500F1A523 /* DMVideoCollectionViewCell.m */,
 				874B6DCB1B71387F00F1A523 /* Main.storyboard */,
 				874B6DCE1B71387F00F1A523 /* Images.xcassets */,
 				874B6DD01B71387F00F1A523 /* LaunchScreen.xib */,
@@ -219,7 +229,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				874B6DCA1B71387F00F1A523 /* ViewController.m in Sources */,
+				874B6DE91B71390600F1A523 /* DMVideo.m in Sources */,
+				874B6DEC1B713A7500F1A523 /* DMVideoCollectionViewCell.m in Sources */,
+				874B6DCA1B71387F00F1A523 /* DMVideosViewController.m in Sources */,
 				874B6DC71B71387F00F1A523 /* AppDelegate.m in Sources */,
 				874B6DC41B71387F00F1A523 /* main.m in Sources */,
 			);
