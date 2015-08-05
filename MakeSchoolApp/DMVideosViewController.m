@@ -22,28 +22,22 @@
 - (void)viewDidLoad {
   [super viewDidLoad];
   
-  NSURLSession *urlSession = [NSURLSession sharedSession];
-  
   self.videos = [NSMutableArray array];
-  
-  NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"https://api.dailymotion.com/videos?list=what-to-watch&limit=30&page=1&fields=id,owner_screenname,duration,title,thumbnail_240_url,views_total,created_time,channel.name"]];
-  NSURLSessionDataTask *dataTask = [urlSession dataTaskWithRequest:request
-                                                 completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
-                                                   NSDictionary *JSON = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:nil];
-                                                   NSArray *videosJSON = JSON[@"list"];
-                                                   for (NSDictionary *videoJSON in videosJSON) {
-                                                     [self.videos addObject:[DMVideo videoWithDictionary:videoJSON]];
-                                                   }
-                                                   dispatch_sync(dispatch_get_main_queue(), ^{
-                                                     [self.collectionView reloadData];
-                                                   });
-                                                 }];
-  [dataTask resume];
-}
 
-- (void)didReceiveMemoryWarning {
-  [super didReceiveMemoryWarning];
-  // Dispose of any resources that can be recreated.
+  NSURLSession *session = [NSURLSession sharedSession];
+  
+  NSURLSessionDataTask *dataTask = [session dataTaskWithURL:[NSURL URLWithString:@"https://api.dailymotion.com/videos?list=what-to-watch&limit=30&page=1&fields=id,owner_screenname,duration,title,thumbnail_240_url,views_total,created_time,channel.name"]
+                                          completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+                                            NSDictionary *JSON = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:nil];
+                                            NSArray *videosJSON = JSON[@"list"];
+                                            for (NSDictionary *videoJSON in videosJSON) {
+                                              [self.videos addObject:[DMVideo videoWithDictionary:videoJSON]];
+                                            }
+                                            dispatch_sync(dispatch_get_main_queue(), ^{
+                                              [self.collectionView reloadData];
+                                            });
+                                          }];
+  [dataTask resume];
 }
 
 #pragma mark UICollectionViewDataSource & UICollectionViewDelegate

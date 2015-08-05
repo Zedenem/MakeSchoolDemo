@@ -39,11 +39,21 @@
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="125" id="4fN-Rb-kqm"/>
                                                     </constraints>
+                                                    <variation key="default">
+                                                        <mask key="constraints">
+                                                            <exclude reference="4fN-Rb-kqm"/>
+                                                        </mask>
+                                                    </variation>
+                                                    <variation key="widthClass=compact">
+                                                        <mask key="constraints">
+                                                            <include reference="4fN-Rb-kqm"/>
+                                                        </mask>
+                                                    </variation>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E1Y-ON-dis">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E1Y-ON-dis">
                                                     <rect key="frame" x="135" y="8" width="42" height="54"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -51,7 +61,7 @@
                                         </view>
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="0.14999999999999999" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="E1Y-ON-dis" secondAttribute="trailing" priority="999" id="ANy-Fn-ewz"/>
+                                            <constraint firstAttribute="trailing" secondItem="E1Y-ON-dis" secondAttribute="trailing" priority="999" constant="8" id="ANy-Fn-ewz"/>
                                             <constraint firstItem="E1Y-ON-dis" firstAttribute="leading" secondItem="eIj-1V-XKc" secondAttribute="trailing" constant="10" id="Hg7-p2-hfH"/>
                                             <constraint firstAttribute="bottom" secondItem="eIj-1V-XKc" secondAttribute="bottom" id="RDu-bg-Bag"/>
                                             <constraint firstItem="eIj-1V-XKc" firstAttribute="leading" secondItem="Yda-zX-qwf" secondAttribute="leading" id="T0d-o7-WRq"/>
@@ -59,6 +69,28 @@
                                             <constraint firstAttribute="bottomMargin" secondItem="E1Y-ON-dis" secondAttribute="bottom" id="Z9T-gZ-frq"/>
                                             <constraint firstItem="eIj-1V-XKc" firstAttribute="top" secondItem="Yda-zX-qwf" secondAttribute="top" id="b7G-FK-RRZ"/>
                                         </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="RDu-bg-Bag"/>
+                                                <exclude reference="T0d-o7-WRq"/>
+                                                <exclude reference="b7G-FK-RRZ"/>
+                                                <exclude reference="ANy-Fn-ewz"/>
+                                                <exclude reference="Hg7-p2-hfH"/>
+                                                <exclude reference="UA6-R4-nTf"/>
+                                                <exclude reference="Z9T-gZ-frq"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="widthClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="RDu-bg-Bag"/>
+                                                <include reference="T0d-o7-WRq"/>
+                                                <include reference="b7G-FK-RRZ"/>
+                                                <include reference="ANy-Fn-ewz"/>
+                                                <include reference="Hg7-p2-hfH"/>
+                                                <include reference="UA6-R4-nTf"/>
+                                                <include reference="Z9T-gZ-frq"/>
+                                            </mask>
+                                        </variation>
                                         <connections>
                                             <outlet property="thumbnailImageView" destination="eIj-1V-XKc" id="ZXD-Ve-2yx"/>
                                             <outlet property="titleLabel" destination="E1Y-ON-dis" id="3Pv-CH-OZS"/>
